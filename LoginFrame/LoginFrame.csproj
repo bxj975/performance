@@ -1,0 +1,496 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D480BF83-7462-4032-9ABC-B91BDE914522}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LoginFrame</RootNamespace>
+    <AssemblyName>LoginFrame</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>http://localhost/LoginFrame/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="IrisSkin4">
+      <HintPath>E:\学习事例\WinForm\CarSystem\CarSystem\bin\Debug\IrisSkin4.dll</HintPath>
+    </Reference>
+    <Reference Include="Library, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Library.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common.cs" />
+    <Compile Include="DataGridViewCellPrint.cs" />
+    <Compile Include="FrmAddCustom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddCustom.Designer.cs">
+      <DependentUpon>FrmAddCustom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmIP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIP.Designer.cs">
+      <DependentUpon>frmIP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmQueryCustom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmQueryCustom.Designer.cs">
+      <DependentUpon>FrmQueryCustom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm主面.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm主面.designer.cs">
+      <DependentUpon>Frm主面.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm关于.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm关于.designer.cs">
+      <DependentUpon>Frm关于.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm密码修改.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm密码修改.designer.cs">
+      <DependentUpon>Frm密码修改.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm找回密码.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm找回密码.Designer.cs">
+      <DependentUpon>Frm找回密码.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Landing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Landing.Designer.cs">
+      <DependentUpon>Landing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm登陆成功显示进度.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm登陆成功显示进度.designer.cs">
+      <DependentUpon>Frm登陆成功显示进度.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginRoler.cs" />
+    <Compile Include="PageData.cs" />
+    <Compile Include="Print.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Frm管理员管理.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm管理员管理.designer.cs">
+      <DependentUpon>Frm管理员管理.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm客户分类.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm客户分类.designer.cs">
+      <DependentUpon>Frm客户分类.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProduct.Designer.cs">
+      <DependentUpon>FrmProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUserName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUserName.Designer.cs">
+      <DependentUpon>FrmUserName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAnalyze.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAnalyze.Designer.cs">
+      <DependentUpon>FrmAnalyze.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmQueryWorkR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmQueryWorkR.Designer.cs">
+      <DependentUpon>FrmQueryWorkR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSettle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSettle.Designer.cs">
+      <DependentUpon>FrmSettle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDataIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDataIn.Designer.cs">
+      <DependentUpon>FrmDataIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCustom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCustom.Designer.cs">
+      <DependentUpon>FrmCustom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAdjust.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAdjust.Designer.cs">
+      <DependentUpon>FrmAdjust.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUName.Designer.cs">
+      <DependentUpon>FrmUName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPay.Designer.cs">
+      <DependentUpon>FrmPay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPerformance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPerformance.Designer.cs">
+      <DependentUpon>FrmPerformance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSet.designer.cs">
+      <DependentUpon>FrmSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmQueryPay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmQueryPay.Designer.cs">
+      <DependentUpon>FrmQueryPay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmQueryAdjust.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmQueryAdjust.Designer.cs">
+      <DependentUpon>FrmQueryAdjust.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmQuerySubmit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmQuerySubmit.Designer.cs">
+      <DependentUpon>FrmQuerySubmit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmQueryReward.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmQueryReward.Designer.cs">
+      <DependentUpon>FrmQueryReward.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGrade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGrade.Designer.cs">
+      <DependentUpon>FrmGrade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmQueryGrade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmQueryGrade.Designer.cs">
+      <DependentUpon>FrmQueryGrade.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FrmAddCustom.resx">
+      <DependentUpon>FrmAddCustom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmIP.resx">
+      <DependentUpon>frmIP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmQueryCustom.resx">
+      <DependentUpon>FrmQueryCustom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm主面.resx">
+      <DependentUpon>Frm主面.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm关于.resx">
+      <DependentUpon>Frm关于.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm密码修改.resx">
+      <DependentUpon>Frm密码修改.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm找回密码.resx">
+      <DependentUpon>Frm找回密码.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Landing.resx">
+      <DependentUpon>Landing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm登陆成功显示进度.resx">
+      <DependentUpon>Frm登陆成功显示进度.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Frm管理员管理.resx">
+      <DependentUpon>Frm管理员管理.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm客户分类.resx">
+      <DependentUpon>Frm客户分类.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProduct.resx">
+      <DependentUpon>FrmProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUserName.resx">
+      <DependentUpon>FrmUserName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAnalyze.resx">
+      <DependentUpon>FrmAnalyze.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmQueryWorkR.resx">
+      <DependentUpon>FrmQueryWorkR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSettle.resx">
+      <DependentUpon>FrmSettle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDataIn.resx">
+      <DependentUpon>FrmDataIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCustom.resx">
+      <DependentUpon>FrmCustom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAdjust.resx">
+      <DependentUpon>FrmAdjust.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUName.resx">
+      <DependentUpon>FrmUName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPay.resx">
+      <DependentUpon>FrmPay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPerformance.resx">
+      <DependentUpon>FrmPerformance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSet.resx">
+      <DependentUpon>FrmSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmQueryPay.resx">
+      <DependentUpon>FrmQueryPay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmQueryAdjust.resx">
+      <DependentUpon>FrmQueryAdjust.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmQuerySubmit.resx">
+      <DependentUpon>FrmQuerySubmit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmQueryReward.resx">
+      <DependentUpon>FrmQueryReward.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGrade.resx">
+      <DependentUpon>FrmGrade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmQueryGrade.resx">
+      <DependentUpon>FrmQueryGrade.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bin\Debug\LoginFrame.exe.config" />
+    <None Include="bin\Debug\LoginFrame.vshost.exe.config" />
+    <None Include="bin\Debug\LoginFrame.vshost.exe.manifest" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Skins\Calmness.ssk" />
+    <None Include="Skins\CalmnessColor1.ssk" />
+    <None Include="Skins\CalmnessColor2.ssk" />
+    <None Include="Skins\DeepCyan.ssk" />
+    <None Include="Skins\DeepGreen.ssk" />
+    <None Include="Skins\DeepOrange.ssk" />
+    <None Include="Skins\Emerald.ssk" />
+    <None Include="Skins\EmeraldColor1.ssk" />
+    <None Include="Skins\EmeraldColor2.ssk" />
+    <None Include="Skins\EmeraldColor3.ssk" />
+    <None Include="Skins\MSN.ssk" />
+    <None Include="Skins\office2007.ssk" />
+    <None Include="Skins\Page.ssk" />
+    <None Include="Skins\PageColor1.ssk" />
+    <None Include="Skins\PageColor2.ssk" />
+    <None Include="Skins\RealOne.ssk" />
+    <None Include="Skins\Silver.ssk" />
+    <None Include="Skins\SilverColor1.ssk" />
+    <None Include="Skins\SilverColor2.ssk" />
+    <None Include="Skins\vista1.ssk" />
+    <None Include="Skins\vista1_green.ssk" />
+    <None Include="Skins\Vista2_color1.ssk" />
+    <None Include="Skins\Vista2_color2.ssk" />
+    <None Include="Skins\Vista2_color3.ssk" />
+    <None Include="Skins\Vista2_color4.ssk" />
+    <None Include="Skins\Vista2_color5.ssk" />
+    <None Include="Skins\Vista2_color6.ssk" />
+    <None Include="Skins\Vista2_color7.ssk" />
+    <None Include="Skins\Warm.ssk" />
+    <None Include="Skins\WarmColor1.ssk" />
+    <None Include="Skins\WarmColor2.ssk" />
+    <None Include="Skins\WarmColor3.ssk" />
+    <None Include="Skins\Wave.ssk" />
+    <None Include="Skins\WaveColor1.ssk" />
+    <None Include="Skins\WaveColor2.ssk" />
+    <None Include="Skins\XPBlue.ssk" />
+    <None Include="Skins\XPGreen.ssk" />
+    <None Include="Skins\XPOrange.ssk" />
+    <None Include="Skins\XPSilver.ssk" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\Library.dll" />
+    <Content Include="bin\Debug\LoginFrame.exe" />
+    <Content Include="bin\Debug\LoginFrame.pdb" />
+    <Content Include="bin\Debug\LoginFrame.vshost.exe" />
+    <Content Include="icon\favicon.ico" />
+    <Content Include="pic\001.png" />
+    <Content Include="pic\01.jpg" />
+    <Content Include="pic\NoImage.jpg" />
+    <Content Include="pic\png-0048.png" />
+    <Content Include="pic\png-0067.png" />
+    <Content Include="pic\png-0090.png" />
+    <Content Include="pic\png-0098.png" />
+    <Content Include="pic\png-0673.png" />
+    <Content Include="pic\png-1659.png" />
+    <Content Include="pic\png-1712.png" />
+    <Content Include="pic\png-1718.png" />
+    <Content Include="pic\png-1719.png" />
+    <Content Include="pic\png-1732.png" />
+    <Content Include="pic\png-1767.png" />
+    <Content Include="pic\png-1855.png" />
+    <Content Include="pic\png-1944.png" />
+    <Content Include="pic\png-1954.png" />
+    <Content Include="pic\png-1981.png" />
+    <Content Include="pic\Train.jpg" />
+    <Content Include="pic\界面背景.png" />
+    <Content Include="pic\登录按钮.png" />
+    <Content Include="pic\登录框.png" />
+    <Content Include="bin\Debug\Regedit.txt" />
+    <Content Include="bin\Debug\RolesType.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{31F34CE9-AB8B-49EE-81D5-125F35CC6DF2}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{27BC9362-D5EF-40BD-B3B4-5AC4F29EE07B}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{FD2F917D-F2FF-4162-B93D-CD7F4B7A3E3D}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

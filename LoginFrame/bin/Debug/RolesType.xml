@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Roles>
+	<No1>
+		<Name>普通用户</Name>
+		<Number>1</Number>
+	</No1>
+	<No2>
+		<Name>管理员</Name>
+		<Number>2</Number>
+	</No2>
+</Roles>
